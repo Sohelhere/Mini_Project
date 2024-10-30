@@ -1,4 +1,4 @@
-<style>
+<!-- <style>
   /* General Reset */
 * {
     margin: 0;
@@ -11,12 +11,6 @@ html, body {
     height: 100%; /* Set height to 100% */
 }
 
-body {
-    background-color: #121212;
-    color: #ffffff;
-    display: flex; /* Use Flexbox */
-    flex-direction: column; /* Arrange elements vertically */
-}
 
 /* Container to fill the viewport */
 .container {
@@ -103,6 +97,8 @@ body {
     color: #ffffff; /* Button text color */
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-left: 10px;
+
 }
 
 .search-button:hover {
@@ -158,62 +154,6 @@ body {
 }
 
 /* Footer Styles */
-.footer {
-    background-color: #1c1c1c; /* Footer background color */
-    color: #ffffff; /* Text color */
-    padding: 20px 0; /* Padding for top and bottom */
-    text-align: center; /* Centered text */
-}
-
-.footer-content {
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center items horizontally */
-}
-
-.footer-logo {
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-    margin-bottom: 10px; /* Space below logo */
-}
-
-.footer-links {
-    list-style: none; /* Remove bullet points */
-    display: flex; /* Horizontal layout */
-    gap: 20px; /* Space between links */
-    margin-bottom: 10px; /* Space below links */
-}
-
-.footer-links a {
-    color: #ffffff; /* Link color */
-    text-decoration: none; /* Remove underline */
-    transition: color 0.3s ease; /* Transition effect */
-}
-
-.footer-links a:hover {
-    color: #f0a500; /* Color on hover */
-}
-
-.social-icons {
-    display: flex; /* Horizontal layout for icons */
-    gap: 15px; /* Space between icons */
-    margin-bottom: 10px; /* Space below icons */
-}
-
-.social-icon {
-    color: #ffffff; /* Icon color */
-    font-size: 1.5rem; /* Icon size */
-    transition: color 0.3s ease; /* Transition effect */
-}
-
-.social-icon:hover {
-    color: #f0a500; /* Color on hover */
-}
-
-.footer-bottom {
-    margin-top: 10px; /* Space above bottom text */
-}
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -255,16 +195,13 @@ body {
       </div>  
       <div class="search-container">
           <input type="text" class="search-input" placeholder="Search...">
-          <button class="search-button">Go</button>
+          <button class="search-button">Search</button>
       </div>
       <div class="auth-buttons">
           <button class="login-button">Login</button>
           <button class="signup-button">Sign Up</button>
       </div>
       <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
           <li><a href="#">Contact</a></li>
       </ul>
       <div class="menu-toggle" id="mobile-menu">
@@ -273,30 +210,6 @@ body {
           <span class="bar"></span>
       </div>
   </nav>
-
-  <footer class="footer">
-      <div class="footer-content">
-          <div class="footer-logo">
-              <i class="fas fa-lightbulb"></i>
-              <span>InnovaRate<strong></strong></span>
-          </div>
-          <ul class="footer-links">
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Service</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">FAQ</a></li>
-          </ul>
-          <div class="social-icons">
-              <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-          </div>
-      </div>
-      <div class="footer-bottom">
-          <p>&copy; 2024 InnovateRate. All Rights Reserved.</p>
-      </div>
-  </footer>
 </div>
 
 <script>
@@ -308,16 +221,135 @@ body {
       navLinks.classList.toggle('active');
   });
 
-  // Search functionality
-  document.querySelector('.search-button').addEventListener('click', function() {
-      const searchInput = document.querySelector('.search-input').value;
-      alert(`You searched for: ${searchInput}`);
-  });
 </script>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Innovation Price Negotiation Platform</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
+  -->
+  <style>
+    .navbar-brand .fas {
+   font-size: 2em; /* Increase the icon size; adjust as needed */
+   color: #5bc98d; /* Optional: set a color for the icon */
+}
+
+.navbar-nav .nav-link span {
+font-size: 0.8em;   /* Adjust font size as needed */
+color: #5bc98d;     /* Customize color */
+font-weight: bold;  /* Optional: make it bold */
+}
+.container{
+flex: 1;
+}
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+/* .nav-link{
+    color: #222222 !important;
+} */
+
+    .btn-search{
+      background-color:#5bc98d;
+      color: white;
+      border-radius: 25px;
+      padding: 0 1rem 0 1rem;
+    }
+    .btn.login .nav-link{
+        
+        color:#5bc98d;
+    }
+    .login{
+        background-color: white;
+        border-radius: 100px;
+        padding: 0 1rem 0 1rem;
+        margin: 10px;
+
+    }
+    .login:hover{
+        background-color:white;
+    }
+    .signup{
+        background-color: #5bc98d;
+        border-radius: 100px;
+        padding: 0 1rem 0 1rem;
+        margin: 10px;
+    }
+    .btn.signup .nav-link{
+        color:white;
+    }
+    .signup:hover{
+        background-color: #5bc98d;
+    }
+    .logout{
+        background-color: #5bc98d;
+        border-radius: 100px;
+        padding: 0 1rem 0 1rem;
+        margin: 10px;
+    }
+    .btn.logout .nav-link{
+        color:white;
+    }
+    .logout:hover{
+        background-color: #5bc98d;
+    }
+
+    .btn-search:hover{
+      background-color: #5bc98d;
+      color: white;
+    }
+    .btn-search i{
+      display: inline;
+      margin-right: 0.5rem;
+    }
+    .inp-search{
+      border-radius: 25px;
+      padding: 0.5rem 1rem 0.5rem 1rem;
+      font-size: 0.8rem;
+    }
+  
+    /* Ensure the navbar has a background color */
+    .navbar {
+      background-color: #f8f9fa; /* You can change this color */
+    }
+  
+    /* When navbar is collapsed, apply background color */
+    .navbar-collapse {
+      background-color: #f8f9fa; /* Background color when collapsed */
+    }
+  
+    /* Optional: To make the toggler more visible */
+    .navbar-toggler {
+      border-color: rgba(0, 0, 0, 0.1);
+    }
+  </style>
+  <!-- <div class="logo">
+    <i class="fas fa-lightbulb"></i>
+    <span>InnovaRate<strong></strong></span>
+</div>   -->
+  <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/listings"><i class="fas fa-lightbulb"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link title" href="/listings">DEALDASH<br><span>STEPS INTO SAVINGS!</span></a>
+        </div>
+        <div class="navbar-nav ms-auto">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 inp-search" type="search" placeholder="Browse Products" aria-label="Search">
+            <button class="btn btn-search" type="submit"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+          </form>      
+        </div>
+        <div class="navbar-nav ms-auto" >
+          <a class="nav-link" href="/listings">DEALDASH NOW!<br><span>LIMITED TIME DEALS!</span></a>
+           <button class="btn login"><a class="nav-link"  href="/signup">LOGIN</a></button> 
+           <button class="btn signup"><a class="nav-link"  href="/signup">SIGN UP</a></button>
+           <button class="btn logout"><a class="nav-link"  href="/signup">LOG OUT</a></button> 
+        </div>
+      </div>
+    </div>
+  </nav>

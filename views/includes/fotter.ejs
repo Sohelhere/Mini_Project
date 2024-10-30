@@ -1,1 +1,84 @@
 <!-- Here Fotter should be created -->
+ <style>
+    .footer {
+    background-color: #1c1c1c; /* Footer background color */
+    color: #ffffff; /* Text color */
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Centered text */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px; /* Space below logo */
+}
+
+.footer-links {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Horizontal layout */
+    gap: 20px; /* Space between links */
+    margin-bottom: 10px; /* Space below links */
+}
+
+.footer-links a {
+    color: #ffffff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Transition effect */
+}
+
+.footer-links a:hover {
+    color: #f0a500; /* Color on hover */
+}
+
+.social-icons {
+    display: flex; /* Horizontal layout for icons */
+    gap: 15px; /* Space between icons */
+    margin-bottom: 10px; /* Space below icons */
+}
+
+.social-icon {
+    color: #ffffff; /* Icon color */
+    font-size: 1.5rem; /* Icon size */
+    transition: color 0.3s ease; /* Transition effect */
+}
+
+.social-icon:hover {
+    color: #f0a500; /* Color on hover */
+}
+
+.footer-bottom {
+    margin-top: 10px; /* Space above bottom text */
+}
+
+ </style>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <i class="fas fa-lightbulb"></i>
+            <span>InnovaRate<strong></strong></span>
+        </div>
+        <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 InnovateRate. All Rights Reserved.</p>
+    </div>
+</footer>

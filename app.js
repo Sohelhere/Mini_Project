@@ -5,6 +5,9 @@ const express = require("express");
  const MONGO_URL = "mongodb://127.0.0.1:27017/NEGOTIATION";
  const Listing = require("./models/listings.js");
  const path = require("path");
+ const passport = require('passport');
+ const localStrategy = require('passport-local');
+ const User = require('./models/user.js');
 
  main().then(()=>{
     console.log("Connected to DB");
