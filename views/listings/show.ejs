@@ -1,0 +1,8 @@
+<% layout("layouts/boilerplate") %>
+<h3>Listing Details:</h3>
+<ul>
+    <li><%= listing.title %></li>
+    <li><%= listing.model %></li>
+    <li>&#8377; <%= listing.price.toLocaleString("en-IN") %></li>
+    <li><%= listing.description %></li>
+</ul>
