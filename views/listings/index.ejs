@@ -6,4 +6,126 @@
         <li><a href="/listings/<%= listing._id %>"><%= listing.title %></a></li>
     <%} %>
 </ul>
- 
+
+<style>
+    .card {
+    width: 15rem; /* Width of the card */
+    background: #ffffff; /* White background */
+    color: #000000; /* Black text */
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.card-img-top {
+    width: 100%; /* Full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Set a maximum height for the image */
+    object-fit: contain; /* Ensures the whole image is visible */
+    border-bottom: 2px solid #ff5722; /* Colorful border below the image */
+}
+
+.card-body {
+    padding: 10px; /* Padding inside the card */
+}
+
+.card-title {
+    font-size: 1.2em; /* Title font size */
+    color: #000000; /* Black text for title */
+    font-weight: bold;
+}
+
+.card-price {
+    font-size: 1em; /* Price font size */
+    color: #ff5722; /* Color for the price */
+    font-weight: bold;
+    margin: 6px 0; /* Margin above and below the price */
+}
+
+.card-text {
+    font-size: 0.85em; /* Description font size */
+    color: #333; /* Dark grey for better readability */
+    margin-bottom: 10px; /* Margin below the description */
+}
+
+.list-group {
+    list-style: none; /* No bullets for the list */
+    padding: 0; /* No padding */
+    margin: 0; /* No margin */
+    border-top: 1px solid #e0e0e0; /* Light top border */
+}
+
+.list-group-item {
+    padding: 6px 10px; /* Padding for list items */
+    font-size: 0.9em; /* Font size for list items */
+    color: #000; /* Black text for list items */
+    border-bottom: 1px solid #e0e0e0; /* Light border between items */
+    text-align: left; /* Align text to the left */
+}
+
+.card-actions {
+    display: flex; /* Flexbox for button alignment */
+    justify-content: space-around; /* Space between buttons */
+    padding: 10px; /* Padding inside actions */
+}
+
+.card-button {
+    display: inline-block; /* Inline block for buttons */
+    padding: 8px 12px; /* Button padding */
+    color: #ffffff; /* Button text color */
+    background: #ff5722; /* Button background color */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 0.85em; /* Button font size */
+    font-weight: bold; /* Bold button text */
+    text-decoration: none; /* No underline */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: background 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.card-button:hover {
+    background: #e64a19; /* Darker color on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.card-button-buy {
+    background: #388e3c; /* Green color for Buy Now button */
+}
+
+.card-button-buy:hover {
+    background: #2e7d32; /* Darker green on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+</style>
+
+<div class="card">
+    <img src="https://rukminim2.flixcart.com/image/350/350/xif0q/mobile/d/y/s/-original-imagu4gtugngtufj.jpeg?q=90&crop=false" class="card-img-top" alt="Samsung Galaxy S21">
+    <div class="card-body">
+        <h5 class="card-title">Samsung Galaxy S21</h5>
+        <p class="card-price">₹49,999</p>
+        <p class="card-text">Unleash Next-Level Performance and Style with the latest Samsung Galaxy S21.</p>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item"><strong>120Hz AMOLED Display</strong> – Stunning visuals</li>
+        <li class="list-group-item"><strong>Pro-Grade Camera</strong> – Capture every detail</li>
+        <li class="list-group-item"><strong>5G Ready</strong> – Connect at lightning speeds</li>
+    </ul>
+    <div class="card-actions">
+        <a href="#" class="card-button">Add to Cart</a>
+        <a href="#" class="card-button card-button-buy">Buy Now</a>
+    </div>
+</div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung Galaxy S21 Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
