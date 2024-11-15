@@ -26,6 +26,7 @@ const express = require("express");
 //  Index Route
  app.get("/listings", async(req, res)=>{
    const allListings = await Listing.find({});
+   // console.log(allListings);
    res.render("listings/index.ejs", {allListings});
  });
 
@@ -35,12 +36,14 @@ const express = require("express");
    const listing = await Listing.findById(id);
    res.render("listings/show.ejs", {listing});
 
- })
+ });
  
  app.get("/", (req, res)=>{
     res.send("Hi I am root!");
  });
 
+ 
+
  app.listen(8086, ()=>{
     console.log(`app is listening to the port 8086`);
- })
+ });
