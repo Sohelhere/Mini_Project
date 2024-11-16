@@ -1,40 +1,22 @@
 <% layout("layouts/boilerplate") %>
-<<<<<<< HEAD
-       <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 mt-3" style="display: flex ; justify-content: center; ">
-=======
+       <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-1 mt-3" style=" display: flex; justify-content: center; text-align: center;">
+        <% for(let listing of allListings) { %>
+            <div class="card ">
+                <img src="<%= listing.image %>" class="card-img-top" alt="listingImage" style="height: 20rem; padding: 10px;"/>
+                <div class="card-body">
+                    <h2 class="card-title" style="color: #3e4042 !important; text-align: center; font-family: 'Avenir Next Cyr', sans-serif; font-size: 15px; font-weight: 700;"><%= listing.title %></h2>
+                    <!-- <p class="card-model"><%= listing.description %></p> -->
+                     <p class="card-model" style="font-family: 'Avenir Next Cyr', sans-serif; font-size: 12px; font-weight: 700; opacity: 1;">Model <%= listing.model %></p>
+                     <p class="card-price"> &#8377;<%= listing.price.toLocaleString("en-IN") %></p>
+                    </div>
+                    <div class="card-actions">
+                        <a href="/listings"><button class="btn" style="background-color:#55a735; color: white;">VIEW PRODUCT</button></a>
+                    </div>
+                </div>
+                <%} %>
+    </div>
 
-<h3>All Products</h3>
-<!-- <ul>
-    
->>>>>>> 87b89a057f74de6361279f440c4d50cc366b321b
-    <% for(let listing of allListings) { %>
-        <div class="card ">
-            <img src="<%= listing.image %>" class="card-img-top" alt="listingImage" style="height: 20rem; padding: 10px;"/>
-            <div class="card-body">
-                <h2 class="card-title" style="color: #3e4042 !important; text-align: center; font-family: 'Avenir Next Cyr', sans-serif; font-size: 15px; font-weight: 700;"><%= listing.title %></h2>
-                <!-- <p class="card-model"><%= listing.description %></p> -->
-                <p class="card-model" style="font-family: 'Avenir Next Cyr', sans-serif; font-size: 12px; font-weight: 700; opacity: 1;">Model <%= listing.model %></p>
-                <p class="card-price"> &#8377;<%= listing.price.toLocaleString("en-IN") %></p>
-                <button style="background-color:#55a735; color: white;">VIEW PRODUCT</button>
-            </div>
 
-            <!-- <div class="card-actions">
-                <a href="#" class="card-button">Add to Cart</a>
-                <a href="#" class="card-button card-button-buy">Buy Now</a>
-            </div> -->
-        </div>
-    <%} %>
-<<<<<<< HEAD
-</div>
-=======
-</ul> -->
-
-<ul>
-    <% for (let listing of allListings) { %>
-        <li> <a href="/listings/<%= listing._id %>"><%= listing.title %></a> </li>
-    <% } %>
-</ul>
->>>>>>> 87b89a057f74de6361279f440c4d50cc366b321b
 
 
 <style>
@@ -47,7 +29,7 @@
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-in;
     margin: 10px;
 }
 
@@ -136,28 +118,8 @@
 }
 </style>
 
-<<<<<<< HEAD
 
-=======
-<div class="card">
-    <img src="https://rukminim2.flixcart.com/image/350/350/xif0q/mobile/d/y/s/-original-imagu4gtugngtufj.jpeg?q=90&crop=false" class="card-img-top" alt="Samsung Galaxy S21">
-    <div class="card-body">
-        <h5 class="card-title">Samsung Galaxy S21</h5>
-        <p class="card-price">₹49,999</p>
-        <p class="card-text">Unleash Next-Level Performance and Style with the latest Samsung Galaxy S21.</p>
-    </div>
-    <ul class="list-group">
-        <li class="list-group-item"><strong>120Hz AMOLED Display</strong> – Stunning visuals</li>
-        <li class="list-group-item"><strong>Pro-Grade Camera</strong> – Capture every detail</li>
-        <li class="list-group-item"><strong>5G Ready</strong> – Connect at lightning speeds</li>
-    </ul>
-    <div class="card-actions">
-        <a href="#" class="card-button">Add to Cart</a>
-        <a href="#" class="card-button card-button-buy">Buy Now</a>
-    </div>
-</div>
-
-
+<!-- 
 <style>
      .form-container {
             width: 100%;
@@ -260,9 +222,9 @@
                 font-size: 1.5em;
             }
         }
-</style>
+</style> -->
 
-<div class="form-container">
+<!-- <div class="form-container">
     <h2 class="form-title">Retailer Product Submission Form</h2>
     <form>
         <div class="form-group">
@@ -290,5 +252,4 @@
             <button type="reset" class="button button-reset">Reset</button>
         </div>
     </form>
-</div>
->>>>>>> 87b89a057f74de6361279f440c4d50cc366b321b
+</div> -->
